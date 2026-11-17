@@ -236,3 +236,21 @@ footer a{color:#fff}
   .teaser{padding:24px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.service{transition:none}}
+
+/* Contact form + WhatsApp */
+.contact-form{margin-top:26px;display:flex;flex-direction:column;gap:14px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-weight:700;font-size:14.5px;color:#E6EAF2}
+.field label span{font-weight:400;color:#A9B4C9}
+.field input,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1.5px solid transparent;border-radius:12px;padding:12px 14px;min-height:48px;width:100%}
+.field textarea{resize:vertical;min-height:110px;line-height:1.5}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(20,184,166,.35)}
+.form-error{color:#FECACA;font-size:15px}
+.form-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+.form-actions .btn{cursor:pointer;border:0;font-family:inherit}
+.btn-whatsapp{background:#25D366;color:#0B1528}.btn-whatsapp:hover{background:#3BE07A;color:#0B1528}
+.contact-box{align-items:start}
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:30;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.45);transition:transform .15s ease}
+.wa-float:hover{transform:scale(1.06)}
+@media (max-width:760px){.field-row{grid-template-columns:1fr}.wa-float{right:14px;bottom:14px;width:56px;height:56px}}
