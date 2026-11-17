@@ -254,3 +254,15 @@ footer a{color:#fff}
 .wa-float{position:fixed;right:20px;bottom:20px;z-index:30;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.45);transition:transform .15s ease}
 .wa-float:hover{transform:scale(1.06)}
 @media (max-width:760px){.field-row{grid-template-columns:1fr}.wa-float{right:14px;bottom:14px;width:56px;height:56px}}
+
+/* Needs */
+.needs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.need{border:1.5px solid var(--line);border-radius:var(--r-md);padding:26px;display:flex;flex-direction:column;gap:10px}
+.need h3{font-size:20px;margin-top:6px}
+.need .quote{color:var(--muted);font-style:italic;font-size:15.5px;border-left:0;padding:10px 14px;background:var(--soft);border-radius:12px}
+.need ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px;font-size:15.5px}
+.need li{display:flex;gap:9px;align-items:flex-start}
+.need li::before{content:"";width:16px;height:16px;flex-shrink:0;margin-top:4px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F766E' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E")}
+.open-note{grid-column:auto}
+@media (max-width:980px){.needs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.needs{grid-template-columns:1fr}}
