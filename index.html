@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INNOV CONSULTING GN – Data, IA et solutions digitales</title>
+<meta name="description" content="INNOV CONSULTING GN aide les entreprises à exploiter leurs données, à automatiser avec l'intelligence artificielle et à lancer des solutions digitales adaptées au terrain guinéen.">
+<meta property="og:title" content="INNOV CONSULTING GN – Data, IA et solutions digitales">
+<meta property="og:description" content="Data, intelligence artificielle et solutions digitales, de Conakry à Paris.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://innovconsulting-gn.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#14213D;--navy-deep:#0E1830;--teal:#14B8A6;--teal-ink:#0F766E;--teal-soft:#E6F7F5;
+  --ink:#14213D;--muted:#4B5468;--line:#E3E6EC;--soft:#F4F6F8;--white:#FFFFFF;--orange:#FF6B2C;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Sora',system-ui,sans-serif;line-height:1.15;margin:0;letter-spacing:-0.02em;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--teal-ink)}
+a:hover{color:var(--navy)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:#fff;padding:8px 12px;z-index:10}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
+
+/* Header */
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand svg{flex-shrink:0}
+.brand-name{display:flex;flex-direction:column;line-height:1}
+.brand-name b{font-family:'Sora',sans-serif;font-weight:800;font-size:20px;letter-spacing:-0.3px}
+.brand-name span{font-family:'Sora',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:3.4px;color:var(--teal-ink);margin-top:4px}
+.menu{display:flex;align-items:center;gap:28px}
+.menu a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15.5px}
+.menu a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--navy);color:#fff}.btn-primary:hover{background:var(--navy-deep);color:#fff}
+.btn-teal{background:var(--teal);color:var(--navy-deep)}.btn-teal:hover{background:#2DD4BF;color:var(--navy-deep)}
+.btn-ghost{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--navy)}.btn-ghost:hover{background:var(--soft);color:var(--navy)}
+.menu .btn{color:#fff}
+
+/* Hero */
+.hero{padding:72px 0 80px;background:linear-gradient(180deg,#fff 0%,#fff 60%,var(--soft) 100%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--teal-ink);background:var(--teal-soft);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+.kicker i{width:8px;height:8px;border-radius:50%;background:var(--teal);display:inline-block}
+.hero h1{font-size:clamp(36px,5.2vw,58px);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--teal-ink)}
+.hero p.lead{font-size:19px;color:var(--muted);margin-top:22px;max-width:560px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:34px;font-size:14.5px;color:var(--muted)}
+.hero-tags span{display:inline-flex;align-items:center;gap:6px}
+.hero-art{background:var(--navy);border-radius:28px;padding:28px;color:#fff;box-shadow:0 30px 60px -30px rgba(20,33,61,.55)}
+.art-head{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:#AEB8CC}
+.art-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.art-kpi{background:rgba(255,255,255,.07);border-radius:16px;padding:14px}
+.art-kpi small{display:block;font-size:12.5px;color:#AEB8CC}
+.art-kpi b{font-family:'Sora',sans-serif;font-size:22px}
+.art-chart{background:rgba(255,255,255,.05);border-radius:18px;padding:16px}
+.art-foot{display:flex;align-items:center;gap:10px;margin-top:16px;background:rgba(20,184,166,.14);border-radius:14px;padding:12px 14px;font-size:14.5px}
+.art-foot b{color:#5EEAD4}
+
+/* Sections */
+section{padding:88px 0}
+.sec-head{max-width:720px;margin-bottom:44px}
+.sec-head .eyebrow{font-family:'Sora',sans-serif;font-weight:700;font-size:13px;letter-spacing:2.4px;text-transform:uppercase;color:var(--teal-ink)}
+.sec-head h2{font-size:clamp(28px,3.6vw,40px);margin-top:10px}
+.sec-head p{color:var(--muted);margin-top:14px;font-size:18px}
+
+.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.card{background:#fff;border:1.5px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.card .ico{width:52px;height:52px;border-radius:16px;background:var(--navy);display:flex;align-items:center;justify-content:center}
+.card h3{font-size:20px}
+.card p{color:var(--muted);font-size:16px}
+.card ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.card li{display:flex;gap:8px;align-items:flex-start}
+.card li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal);margin-top:10px;flex-shrink:0}
+
+.alt{background:var(--soft)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;counter-reset:s}
+.step{background:#fff;border-radius:22px;padding:26px;position:relative}
+.step .num{font-family:'Sora',sans-serif;font-weight:800;font-size:15px;color:var(--navy-deep);background:var(--teal);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.step h3{font-size:19px;margin-bottom:8px}
+.step p{color:var(--muted);font-size:16px}
+.strengths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:18px}
+.strength{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:22px;padding:22px 24px}
+.strength svg{flex-shrink:0;margin-top:2px}
+.strength b{display:block;font-size:17px;margin-bottom:2px}
+.strength span{color:var(--muted);font-size:15.5px}
+
+/* Nimba */
+.nimba{background:var(--navy-deep);color:#fff}
+.nimba-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.nimba .eyebrow{color:#FFB08A}
+.nimba h2{color:#fff}
+.nimba .sec-head p{color:#C6CEDD}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:var(--navy-deep);font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px}
+.feat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:8px}
+.feat div{background:rgba(255,255,255,.06);border-radius:18px;padding:18px}
+.feat b{display:block;font-size:16.5px;margin-bottom:4px}
+.feat span{color:#C6CEDD;font-size:15px}
+.nimba .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn-orange{background:var(--orange);color:var(--navy-deep)}.btn-orange:hover{background:#FF8650;color:var(--navy-deep)}
+.btn-light{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}.btn-light:hover{background:rgba(255,255,255,.08);color:#fff}
+.phone{justify-self:center;width:280px;max-width:100%;aspect-ratio:9/18.5;background:#05070C;border-radius:40px;padding:12px;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.screen{height:100%;background:#fff;border-radius:30px;overflow:hidden;display:flex;flex-direction:column;color:var(--ink)}
+.screen-top{background:var(--orange);padding:22px 18px 18px;color:var(--navy-deep)}
+.screen-top small{font-size:12px;font-weight:700;opacity:.8}
+.screen-top b{display:block;font-family:'Sora',sans-serif;font-size:20px;margin-top:2px}
+.screen-list{padding:14px;display:flex;flex-direction:column;gap:10px}
+.dish{display:flex;gap:10px;align-items:center;background:var(--soft);border-radius:14px;padding:10px}
+.dish i{width:44px;height:44px;border-radius:12px;flex-shrink:0;display:block}
+.dish b{display:block;font-size:13.5px}
+.dish span{font-size:12px;color:var(--muted)}
+.screen-btn{margin:auto 14px 16px;background:var(--navy);color:#fff;border-radius:14px;text-align:center;padding:12px;font-weight:700;font-size:14px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.founder{background:var(--navy);color:#fff;border-radius:28px;padding:32px}
+.founder .avatar{width:84px;height:84px;border-radius:24px;background:var(--teal);color:var(--navy-deep);font-family:'Sora',sans-serif;font-weight:800;font-size:30px;display:flex;align-items:center;justify-content:center}
+.founder h3{font-size:24px;margin-top:18px;color:#fff}
+.founder .role{color:#5EEAD4;font-weight:700;margin-top:4px}
+.founder p{color:#C6CEDD;margin-top:14px;font-size:16px}
+.certs{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.certs span{background:rgba(255,255,255,.08);border-radius:999px;padding:6px 12px;font-size:13.5px}
+.about-text p{color:var(--muted);font-size:18px}
+.about-text p + p{margin-top:16px}
+.values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+.values div{border:1.5px solid var(--line);border-radius:18px;padding:18px}
+.values b{display:block;font-size:17px;margin-bottom:4px}
+.values span{color:var(--muted);font-size:15.5px}
+
+/* Contact */
+.contact{background:var(--teal-soft)}
+.contact-box{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;background:#fff;border-radius:28px;padding:44px}
+.contact-box h2{font-size:clamp(26px,3.2vw,36px)}
+.contact-box p{color:var(--muted);margin-top:12px;font-size:18px}
+.contact-list{display:flex;flex-direction:column;gap:14px}
+.contact-item{display:flex;gap:12px;align-items:flex-start}
+.contact-item svg{flex-shrink:0;margin-top:3px}
+.contact-item small{display:block;color:var(--muted);font-size:13.5px}
+.contact-item a,.contact-item b{font-weight:700;color:var(--ink);text-decoration:none;font-size:16.5px;word-break:break-word}
+.contact-item a:hover{color:var(--teal-ink);text-decoration:underline}
+
+/* Footer */
+footer{background:var(--navy-deep);color:#AEB8CC;padding:40px 0;font-size:14.5px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+footer a{color:#fff}
+footer .legal{display:flex;flex-wrap:wrap;gap:6px 16px}
+
+@media (max-width:980px){
+  .hero-grid,.nimba-grid,.about-grid,.contact-box{grid-template-columns:1fr}
+  .services,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strengths{grid-template-columns:1fr}
+  .hero-art{max-width:520px}
+}
+@media (max-width:760px){
+  .menu a:not(.btn){display:none}
+  .hero{padding:48px 0 56px}
+  section{padding:64px 0}
+  .services,.steps,.feat,.values{grid-template-columns:1fr}
+  .contact-box{padding:28px}
+  .wrap{padding:0 16px}
+  .art-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .art-kpi b{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="INNOV CONSULTING GN, accueil">
+      <svg width="44" height="44" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#14213D"/><rect x="17" y="26" width="12" height="48" rx="6" fill="#FFFFFF"/><path d="M 77 34.4 A 22 22 0 1 0 77 65.6" fill="none" stroke="#14B8A6" stroke-width="12" stroke-linecap="round"/></svg>
+      <span class="brand-name"><b>INNOV</b><span>CONSULTING</span></span>
+    </a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="#services">Services</a>
+      <a href="#approche">Approche</a>
+      <a href="#nimba-eat">Nimba Eat</a>
+      <a href="#a-propos">À propos</a>
+      <a class="btn btn-primary" href="#contact">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <section class="hero" aria-labelledby="titre">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker"><i></i>Data · Intelligence artificielle · Solutions digitales</div>
+        <h1 id="titre">Vos données au service de <em>vos décisions</em>, de Conakry à Paris.</h1>
+        <p class="lead">INNOV CONSULTING GN aide les entreprises à exploiter leurs données, à automatiser leurs tâches avec l'intelligence artificielle et à lancer des solutions digitales qui fonctionnent sur le terrain.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#contact">Parlons de votre projet</a>
+          <a class="btn btn-ghost" href="#nimba-eat">Découvrir Nimba Eat</a>
+        </div>
+        <div class="hero-tags">
+          <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Expertise certifiée Dataiku</span>
+          <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Solutions pensées pour la Guinée</span>
+          <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Formation de vos équipes</span>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustration d'un tableau de bord de données">
+        <div class="art-head"><span>Tableau de bord</span><span>Ce mois-ci</span></div>
+        <div class="art-kpis">
+          <div class="art-kpi"><small>Ventes</small><svg viewBox="0 0 60 22" width="100%" height="22" aria-hidden="true"><path d="M2 18 L14 14 L26 16 L38 8 L50 6 L58 3" fill="none" stroke="#5EEAD4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="art-kpi"><small>Livraisons</small><svg viewBox="0 0 60 22" width="100%" height="22" aria-hidden="true"><g fill="#5EEAD4"><rect x="2" y="12" width="8" height="10" rx="2"/><rect x="14" y="8" width="8" height="14" rx="2"/><rect x="26" y="10" width="8" height="12" rx="2"/><rect x="38" y="5" width="8" height="17" rx="2"/><rect x="50" y="2" width="8" height="20" rx="2"/></g></svg></div>
+          <div class="art-kpi"><small>Stocks</small><svg viewBox="0 0 60 22" width="100%" height="22" aria-hidden="true"><path d="M2 6 L14 9 L26 7 L38 12 L50 11 L58 15" fill="none" stroke="#FDBA74" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+        <div class="art-chart">
+          <svg viewBox="0 0 320 130" width="100%" height="130" aria-hidden="true">
+            <g fill="#14B8A6" opacity=".35"><rect x="10" y="74" width="26" height="46" rx="6"/><rect x="50" y="62" width="26" height="58" rx="6"/><rect x="90" y="80" width="26" height="40" rx="6"/><rect x="130" y="50" width="26" height="70" rx="6"/><rect x="170" y="42" width="26" height="78" rx="6"/><rect x="210" y="30" width="26" height="90" rx="6"/><rect x="250" y="22" width="26" height="98" rx="6"/></g>
+            <path d="M23 70 L63 58 L103 66 L143 42 L183 36 L223 22 L263 12" fill="none" stroke="#5EEAD4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="263" cy="12" r="6" fill="#5EEAD4"/>
+          </svg>
+        </div>
+        <div class="art-foot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg><span>Un agent IA a préparé <b>le rapport du matin</b></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="t-services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Nos services</div>
+        <h2 id="t-services">De la donnée brute à la décision, et de l'idée à l'application.</h2>
+        <p>Quatre métiers, un même objectif : des résultats concrets, mesurables et durables pour votre entreprise.</p>
+      </div>
+      <div class="services">
+        <article class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></div>
+          <h3>Data et Business Intelligence</h3>
+          <p>Des chiffres fiables, à jour, et des tableaux de bord que vos équipes utilisent vraiment.</p>
+          <ul><li>Tableaux de bord et reporting automatisé</li><li>Collecte, nettoyage et entrepôt de données</li><li>Dataiku, Qlik Sense, SAP BusinessObjects, Snowflake</li></ul>
+        </article>
+        <article class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg></div>
+          <h3>Intelligence artificielle</h3>
+          <p>L'IA appliquée à vos vrais problèmes, avec un humain qui valide toujours.</p>
+          <ul><li>Modèles de prévision et de détection</li><li>IA générative et assistants métier</li><li>Agents qui automatisent les tâches répétitives</li></ul>
+        </article>
+        <article class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg></div>
+          <h3>Solutions digitales</h3>
+          <p>Des applications mobiles et web conçues pour le terrain, pas seulement pour la démo.</p>
+          <ul><li>Applications Android, iPhone et web</li><li>Paiement mobile, SMS et appels automatiques</li><li>Pensées pour un réseau et un courant instables</li></ul>
+        </article>
+        <article class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l10-5 10 5-10 5z"/><path d="M6 10v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
+          <h3>Formation</h3>
+          <p>Vos équipes deviennent autonomes sur leurs outils et leurs données.</p>
+          <ul><li>Formations Dataiku par un formateur certifié</li><li>Initiation à la data et à l'IA pour les métiers</li><li>Sessions sur mesure, en présentiel ou à distance</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="approche" class="alt" aria-labelledby="t-approche">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Notre approche</div>
+        <h2 id="t-approche">Commencer petit, prouver vite, puis passer à l'échelle.</h2>
+        <p>Chaque projet suit quatre étapes, avec des résultats visibles dès les premières semaines.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h3>Diagnostic</h3><p>Nous partons de vos objectifs, de vos données et de vos contraintes réelles.</p></div>
+        <div class="step"><div class="num">2</div><h3>Prototype</h3><p>Une première version utile, testée avec vos équipes en quelques semaines.</p></div>
+        <div class="step"><div class="num">3</div><h3>Mise en service</h3><p>La solution est fiabilisée, sécurisée et intégrée à votre quotidien.</p></div>
+        <div class="step"><div class="num">4</div><h3>Transfert</h3><p>Nous formons vos équipes pour qu'elles gardent la maîtrise de l'outil.</p></div>
+      </div>
+      <div class="strengths">
+        <div class="strength"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg><div><b>Double culture</b><span>Les standards des grandes entreprises européennes, la connaissance du terrain guinéen.</span></div></div>
+        <div class="strength"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Expertise certifiée</b><span>Certifications Dataiku et AWS, formateur Dataiku agréé.</span></div></div>
+        <div class="strength"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16"/><path d="M4 15l5-5 4 4 7-7"/><path d="M15 7h5v5"/></svg><div><b>Orientés résultats</b><span>Des indicateurs fixés au départ, pour mesurer ce que le projet rapporte.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nimba-eat" class="nimba" aria-labelledby="t-nimba">
+    <div class="wrap nimba-grid">
+      <div>
+        <div class="sec-head" style="margin-bottom:24px">
+          <div class="eyebrow">Notre produit</div>
+          <h2 id="t-nimba">Nimba Eat, la livraison de repas à Conakry.</h2>
+          <p>Conçue et développée par INNOV CONSULTING GN, Nimba Eat relie les clients, les restaurants et des livreurs locaux, tous les soirs.</p>
+        </div>
+        <span class="badge">Bientôt disponible sur Android et iPhone</span>
+        <div class="feat" style="margin-top:22px">
+          <div><b>Commande en quelques gestes</b><span>Le client choisit ses plats dans l'appli.</span></div>
+          <div><b>Livreurs de quartier</b><span>Des livreurs recrutés dans chaque commune.</span></div>
+          <div><b>Espèces ou Orange Money</b><span>Le client paie comme il en a l'habitude.</span></div>
+          <div><b>Ratoma et Matoto</b><span>Les premières zones, avant d'autres communes.</span></div>
+        </div>
+        <div class="ctas">
+          <a class="btn btn-orange" href="mailto:nimbaeat@innovconsulting-gn.com?subject=Devenir%20restaurant%20partenaire%20Nimba%20Eat">Restaurateur ? Rejoignez-nous</a>
+          <a class="btn btn-light" href="mailto:nimbaeat@innovconsulting-gn.com?subject=Devenir%20livreur%20Nimba%20Eat">Devenir livreur</a>
+        </div>
+      </div>
+      <div class="phone" role="img" aria-label="Aperçu de l'application Nimba Eat">
+        <div class="screen">
+          <div class="screen-top"><small>Livraison ce soir · Kipé</small><b>Qu'est-ce qu'on mange ?</b></div>
+          <div class="screen-list">
+            <div class="dish"><i style="background:#FFD9C7"></i><div><b>Riz sauce arachide</b><span>Restaurant du quartier</span></div></div>
+            <div class="dish"><i style="background:#FBE3A6"></i><div><b>Poulet braisé, alloco</b><span>Grillades</span></div></div>
+            <div class="dish"><i style="background:#CDEFEA"></i><div><b>Fouti</b><span>Cuisine guinéenne</span></div></div>
+            <div class="dish"><i style="background:#E2E4F3"></i><div><b>Brochettes et frites</b><span>Snack</span></div></div>
+          </div>
+          <div class="screen-btn">Commander</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="a-propos" aria-labelledby="t-propos">
+    <div class="wrap about-grid">
+      <div class="founder">
+        <div class="avatar" aria-hidden="true">AB</div>
+        <h3>Abdoulaye Bah</h3>
+        <div class="role">Fondateur et président</div>
+        <p>Consultant Data et Business Intelligence depuis plus de cinq ans, il accompagne de grandes organisations en France sur leurs projets de données, et forme leurs équipes.</p>
+        <div class="certs">
+          <span>Dataiku Core &amp; Advanced Designer</span>
+          <span>Dataiku ML &amp; MLOps Practitioner</span>
+          <span>Dataiku Generative AI Practitioner</span>
+          <span>Formateur Dataiku certifié</span>
+          <span>AWS Cloud Practitioner</span>
+          <span>Master IA &amp; Management</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="sec-head" style="margin-bottom:22px">
+          <div class="eyebrow">À propos</div>
+          <h2 id="t-propos">Une entreprise guinéenne, une ambition africaine.</h2>
+        </div>
+        <p>INNOV CONSULTING GN est une société de conseil et de solutions digitales basée à Conakry. Elle met au service des entreprises guinéennes et ouest-africaines une expertise data et IA acquise auprès de grandes organisations européennes.</p>
+        <p>Notre conviction : la technologie n'a de valeur que si elle fonctionne dans les conditions réelles, avec les moyens de paiement, les réseaux et les habitudes de nos clients. C'est ce que nous démontrons avec Nimba Eat.</p>
+        <div class="values">
+          <div><b>Concret</b><span>Des projets qui répondent à un besoin réel et mesurable.</span></div>
+          <div><b>Transmis</b><span>Vos équipes gardent la maîtrise de leurs outils.</span></div>
+          <div><b>Adapté</b><span>Des solutions pensées pour le terrain local.</span></div>
+          <div><b>Fiable</b><span>Des données justes et des engagements tenus.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="t-contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <div>
+          <h2 id="t-contact">Un projet data, IA ou digital ?</h2>
+          <p>Décrivez-nous votre besoin en quelques lignes. Nous revenons vers vous rapidement pour en discuter.</p>
+          <div class="hero-ctas"><a class="btn btn-primary" href="mailto:contact@innovconsulting-gn.com?subject=Projet%20avec%20INNOV%20CONSULTING%20GN">Écrire à l'équipe</a></div>
+        </div>
+        <div class="contact-list">
+          <div class="contact-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><small>E-mail</small><a href="mailto:contact@innovconsulting-gn.com">contact@innovconsulting-gn.com</a></div></div>
+          <div class="contact-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><small>Siège</small><b>Yimbaya Tannerie, Matoto, Conakry, Guinée</b></div></div>
+          <div class="contact-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7"/><path d="M8 7v.01"/><path d="M12 17v-4a2 2 0 0 1 4 0v4"/><path d="M12 10v7"/></svg><div><small>LinkedIn</small><b>INNOV CONSULTING GN</b></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 INNOV CONSULTING GN SASU · RCCM GN.TCC.2026.B.10661 · NIF 367916624</div>
+    <div class="legal"><a href="mentions-legales.html">Mentions légales</a><a href="#contact">Contact</a></div>
+  </div>
+</footer>
+</body>
+</html>
