@@ -75,7 +75,9 @@ section{padding:88px 0}
 .sec-head h2{font-size:clamp(28px,3.6vw,40px);margin-top:10px}
 .sec-head p{color:var(--muted);margin-top:14px;font-size:18px}
 
-.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.services{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
+.services .card{grid-column:span 2}
+.services .card:nth-child(n+4){grid-column:span 3}
 .card{background:#fff;border:1.5px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px}
 .card .ico{width:52px;height:52px;border-radius:16px;background:var(--navy);display:flex;align-items:center;justify-content:center}
 .card h3{font-size:20px}
@@ -200,6 +202,7 @@ footer .legal{display:flex;flex-wrap:wrap;gap:6px 16px}
 @media (max-width:980px){
   .hero-grid,.nimba-grid,.about-grid,.contact-box{grid-template-columns:1fr}
   .services,.steps,.agents,.sectors{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .services .card,.services .card:nth-child(n+4){grid-column:auto}
   .strengths{grid-template-columns:1fr}
   .hero-art{max-width:520px}
 }
@@ -307,12 +310,6 @@ footer .legal{display:flex;flex-wrap:wrap;gap:6px 16px}
           <h3>Applications et logiciels</h3>
           <p>Des applications mobiles et web conçues pour le terrain, pas seulement pour la démo.</p>
           <ul><li>Logiciels de gestion sur mesure (écoles, commerces…)</li><li>Applications Android, iPhone et web</li><li>Paiement mobile, SMS et appels automatiques</li><li>Pensées pour un réseau et un courant instables</li></ul>
-        </article>
-        <article class="card">
-          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16 14.2c3 .2 5.5 2.3 5.5 5.8"/></svg></div>
-          <h3>Pilotage de projets et d'équipes</h3>
-          <p>Un responsable expérimenté pour mener vos projets data et digitaux jusqu'au bout.</p>
-          <ul><li>Cadrage, planning et suivi du budget</li><li>Encadrement ou renfort de vos équipes techniques</li><li>Organisation et recrutement de votre équipe data</li></ul>
         </article>
         <article class="card">
           <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l10-5 10 5-10 5z"/><path d="M6 10v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
