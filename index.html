@@ -28,6 +28,7 @@
     <nav class="menu" aria-label="Navigation principale">
       <a href="#defis">Vos défis</a>
       <a href="#solutions">Solutions</a>
+      <a href="#secteurs">Secteurs</a>
       <a href="#exemples">Exemples</a>
       <a href="#a-propos">À propos</a>
       <a class="menu-product" href="nimba-eat.html">Nimba Eat</a>
@@ -143,21 +144,64 @@
     </div>
   </section>
 
-  <!-- EXEMPLES : onglets + carrousel -->
+  <!-- SECTEURS -->
+  <section id="secteurs" aria-labelledby="t-secteurs">
+    <div class="wrap">
+      <div class="ex-head reveal">
+        <div class="sec-head" style="margin-bottom:0">
+          <div class="eyebrow">Votre secteur</div>
+          <h2 id="t-secteurs">Des solutions qui parlent votre métier.</h2>
+        </div>
+      </div>
+      <div class="sx reveal">
+        <div class="tabs sx-tabs" role="tablist" aria-label="Secteurs">
+          <button role="tab" id="sx-t1" aria-controls="sx-p1" aria-selected="true" type="button">Banques et microfinance</button>
+          <button role="tab" id="sx-t2" aria-controls="sx-p2" aria-selected="false" tabindex="-1" type="button">Mines</button>
+          <button role="tab" id="sx-t3" aria-controls="sx-p3" aria-selected="false" tabindex="-1" type="button">Ressources humaines</button>
+          <button role="tab" id="sx-t4" aria-controls="sx-p4" aria-selected="false" tabindex="-1" type="button">PME et organisations</button>
+        </div>
+      <div id="sx-p1" role="tabpanel" aria-labelledby="sx-t1" class="sx-panel">
+        <div class="sx-intro"><p class="sx-lead">Des rapports à l'heure, des risques suivis de près, et des données qui ne sortent pas de chez vous.</p><p class="sx-note">Notre fondateur travaille depuis plusieurs années sur les données du financement des entreprises en France.</p><a class="sx-cta" href="#contact">Parler de votre projet →</a></div>
+        <div class="sx-cases"><article class="sx-case"><span class="sx-n">01</span><h4>Rapports réglementaires et de gestion</h4><p>Les rapports pour la direction et le régulateur sont produits automatiquement, contrôlés, puis validés par vos équipes avant envoi.</p></article><article class="sx-case"><span class="sx-n">02</span><h4>Impayés et recouvrement</h4><p>Les retards sont repérés chaque jour, les dossiers classés par priorité et les relances préparées pour vos chargés de clientèle.</p></article><article class="sx-case"><span class="sx-n">03</span><h4>Connaissance client et anti-blanchiment</h4><p>Les pièces d'identité sont lues et vérifiées, les opérations inhabituelles signalées. Vos équipes conformité gardent la décision.</p></article></div>
+      </div>
+      <div id="sx-p2" role="tabpanel" aria-labelledby="sx-t2" class="sx-panel" hidden>
+        <div class="sx-intro"><p class="sx-lead">Production, sous-traitants, sécurité : des chiffres consolidés chaque jour, du site jusqu'à la direction.</p><a class="sx-cta" href="#contact">Parler de votre projet →</a></div>
+        <div class="sx-cases"><article class="sx-case"><span class="sx-n">01</span><h4>Production et équipements</h4><p>Tableaux de bord par site et alertes avant les pannes, à partir des données de vos engins et de vos équipes.</p></article><article class="sx-case"><span class="sx-n">02</span><h4>Sous-traitants et achats</h4><p>Contrats, certificats et factures suivis, échéances signalées et part des fournisseurs locaux mesurée pour vos obligations de contenu local.</p></article><article class="sx-case"><span class="sx-n">03</span><h4>Rapports HSE et RSE</h4><p>Incidents remontés du terrain, même sans réseau, et rapports prêts pour la direction, les partenaires et les autorités.</p></article></div>
+      </div>
+      <div id="sx-p3" role="tabpanel" aria-labelledby="sx-t3" class="sx-panel" hidden>
+        <div class="sx-intro"><p class="sx-lead">Moins de saisie et de vérifications à la main, plus de temps pour accompagner les équipes.</p><a class="sx-cta" href="#contact">Parler de votre projet →</a></div>
+        <div class="sx-cases"><article class="sx-case"><span class="sx-n">01</span><h4>Paie et déclarations</h4><p>Éléments variables collectés, contrôles avant chaque paie et données prêtes pour la CNSS et les impôts.</p></article><article class="sx-case"><span class="sx-n">02</span><h4>Présences et congés</h4><p>Pointage, soldes de congés à jour et validations par les responsables, sur ordinateur ou téléphone.</p></article><article class="sx-case"><span class="sx-n">03</span><h4>Recrutement et formation</h4><p>Candidatures triées selon vos critères pour une présélection que vous validez, et formation de vos équipes à l'IA et à leurs outils.</p></article></div>
+      </div>
+      <div id="sx-p4" role="tabpanel" aria-labelledby="sx-t4" class="sx-panel" hidden>
+        <div class="sx-intro"><p class="sx-lead">Commerces, écoles, cliniques, ONG : des outils simples, pensés pour le terrain et le mobile money.</p><p class="sx-note">Transport et livraison : voir <a href="nimba-eat.html">Nimba Eat</a>, notre propre application.</p><a class="sx-cta" href="#contact">Parler de votre projet →</a></div>
+        <div class="sx-cases"><article class="sx-case"><span class="sx-n">01</span><h4>Commerces</h4><p>Caisse, ventes, stocks et crédits clients suivis en temps réel.</p></article><article class="sx-case"><span class="sx-n">02</span><h4>Écoles et universités</h4><p>Notes, bulletins, inscriptions et frais de scolarité payés par mobile money.</p></article><article class="sx-case"><span class="sx-n">03</span><h4>Cliniques, ONG et transport</h4><p>Rendez-vous et rappels SMS, collecte terrain hors connexion, rapports bailleurs, gestion des courses.</p></article></div>
+      </div>
+      </div>
+
+      <div class="trust reveal">
+        <div class="trust-h"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>Sécurité et confidentialité</h3><p>Vos données restent les vôtres.</p></div>
+        <ul class="trust-l">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Hébergement à votre choix</b> sur vos serveurs ou chez l'hébergeur que vous retenez.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Accord de confidentialité</b> signé avant tout échange de données.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Accès limités et tracés</b>, revus avec vous.</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Agents IA sous contrôle</b> : rien n'est envoyé ni validé sans votre accord.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXEMPLES : carrousel -->
   <section id="exemples" class="tint" aria-labelledby="t-exemples">
     <div class="wrap">
       <div class="ex-head reveal">
         <div class="sec-head" style="margin-bottom:0">
           <div class="eyebrow">Exemples</div>
-          <h2 id="t-exemples">Quelques réalisations possibles, parmi beaucoup d'autres.</h2>
+          <h2 id="t-exemples">Des tâches que nos agents peuvent prendre en charge.</h2>
         </div>
-        <div class="tabs" role="tablist" aria-label="Type d'exemples">
-          <button role="tab" id="tab-a" aria-controls="pan-a" aria-selected="true" type="button">Tâches automatisées</button>
-          <button role="tab" id="tab-b" aria-controls="pan-b" aria-selected="false" tabindex="-1" type="button">Outils sur mesure</button>
-        </div>
+
       </div>
 
-      <div id="pan-a" role="tabpanel" aria-labelledby="tab-a" class="panel">
+      <div class="panel">
         <div class="rail" data-rail>
           <article class="ex-card ex-feat">
             <div class="ex-tag">Cas concret</div>
@@ -170,17 +214,6 @@
           <article class="ex-card"><h3>Bulletins scolaires</h3><p class="from">Des semaines de calculs chaque trimestre</p><p class="to">Moyennes et bulletins générés en quelques clics</p></article>
           <article class="ex-card"><h3>Demandes clients</h3><p class="from">Une boîte pleine, des réponses en retard</p><p class="to">Messages triés, réponses rédigées à relire</p></article>
           <article class="ex-card"><h3>Stocks et commandes</h3><p class="from">Chaque bon saisi, un inventaire jamais à jour</p><p class="to">Bons saisis, ruptures signalées à l'avance</p></article>
-        </div>
-      </div>
-
-      <div id="pan-b" role="tabpanel" aria-labelledby="tab-b" class="panel" hidden>
-        <div class="rail" data-rail>
-          <article class="ex-card ex-feat"><div class="ex-tag">Éducation</div><h3>Universités et écoles</h3><p>Notes, bulletins, inscriptions, frais de scolarité par mobile money et espace parents.</p></article>
-          <article class="ex-card"><h3>Commerces</h3><p>Caisse, ventes, stocks et crédits clients en temps réel.</p></article>
-          <article class="ex-card"><h3>Cliniques et pharmacies</h3><p>Rendez-vous, rappels SMS, facturation et stocks.</p></article>
-          <article class="ex-card"><h3>ONG et projets</h3><p>Collecte terrain hors connexion, indicateurs et rapports bailleurs.</p></article>
-          <article class="ex-card"><h3>Mines et fournisseurs</h3><p>Traçabilité, documents de conformité et reporting HSE.</p></article>
-          <article class="ex-card"><h3>Transport et livraison</h3><p>Commandes, attribution des courses, encaissements.</p><a href="nimba-eat.html">Voir Nimba Eat →</a></article>
         </div>
       </div>
 
@@ -316,18 +349,19 @@
     go(0); raf = requestAnimationFrame(tick);
   });
 
-  /* Onglets des exemples */
-  var tabs = document.querySelectorAll('[role="tab"]');
-  function activeRail() { var p = document.querySelector('.panel:not([hidden]) [data-rail]'); return p; }
-  tabs.forEach(function (t) {
-    t.addEventListener('click', function () {
-      tabs.forEach(function (o) { var on = o === t; o.setAttribute('aria-selected', on); o.tabIndex = on ? 0 : -1; document.getElementById(o.getAttribute('aria-controls')).hidden = !on; });
-      var r = activeRail(); if (r) r.scrollLeft = 0;
-    });
-    t.addEventListener('keydown', function (e) {
-      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-      var list = Array.prototype.slice.call(tabs), k = list.indexOf(t), n = list[(k + (e.key === 'ArrowRight' ? 1 : -1) + list.length) % list.length];
-      n.focus(); n.click();
+  /* Onglets (par groupe) */
+  function activeRail() { return document.querySelector('#exemples [data-rail]'); }
+  document.querySelectorAll('[role="tablist"]').forEach(function (list) {
+    var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        tabs.forEach(function (o) { var on = o === t; o.setAttribute('aria-selected', on); o.tabIndex = on ? 0 : -1; document.getElementById(o.getAttribute('aria-controls')).hidden = !on; });
+      });
+      t.addEventListener('keydown', function (e) {
+        if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+        var k = tabs.indexOf(t), n = tabs[(k + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+        n.focus(); n.click();
+      });
     });
   });
   var rp = document.querySelector('[data-rail-prev]'), rn = document.querySelector('[data-rail-next]');

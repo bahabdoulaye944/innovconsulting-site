@@ -438,3 +438,29 @@ footer a{color:#fff}
   .track-line span{transition:none}
 }
 .chip{white-space:nowrap}
+
+/* Secteurs */
+.sx-tabs{flex-wrap:wrap;margin-bottom:22px}
+.sx-panel{display:grid;grid-template-columns:.85fr 2fr;gap:28px;background:var(--soft);border-radius:var(--r-lg);padding:32px;animation:sxin .45s ease both}
+.sx-panel[hidden]{display:none}
+@keyframes sxin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.sx-lead{font-family:'Sora',sans-serif;font-weight:700;font-size:21px;line-height:1.35;color:var(--navy)}
+.sx-note{color:var(--muted);font-size:15px;margin-top:14px}
+.sx-cta{display:inline-block;margin-top:18px;font-weight:700}
+.sx-cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.sx-case{background:#fff;border-radius:var(--r-md);padding:22px;display:flex;flex-direction:column;gap:8px;transition:transform .25s,box-shadow .25s}
+.sx-case:hover{transform:translateY(-3px);box-shadow:0 18px 36px -24px rgba(20,33,61,.45)}
+.sx-n{font-family:'Sora',sans-serif;font-weight:800;font-size:13px;color:var(--teal-ink);letter-spacing:1.5px}
+.sx-case h4{font-family:'Sora',sans-serif;font-size:17px;margin:0;color:var(--navy)}
+.sx-case p{color:var(--muted);font-size:15px;margin:0}
+.trust{margin-top:28px;display:grid;grid-template-columns:.85fr 2fr;gap:28px;align-items:center;background:var(--navy);color:#fff;border-radius:var(--r-lg);padding:30px 32px}
+.trust-h h3{color:#fff;font-size:21px;margin:12px 0 4px}
+.trust-h p{color:#A9B4C9}
+.trust-l{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.trust-l li{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.06);border-radius:14px;padding:14px 16px;font-size:15px;color:#C3CBDA}
+.trust-l svg{color:var(--teal-light);flex-shrink:0;margin-top:3px}
+.trust-l b{color:#fff}
+@media (max-width:980px){.sx-panel,.trust{grid-template-columns:1fr}}
+@media (max-width:760px){.sx-cases,.trust-l{grid-template-columns:1fr}.sx-panel,.trust{padding:22px}.sx-tabs{border-radius:18px}}
+@media (prefers-reduced-motion:reduce){.sx-panel{animation:none}}
+@media (max-width:760px){.sx-tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;border-radius:999px;scrollbar-width:none}.sx-tabs::-webkit-scrollbar{display:none}.sx-tabs button{white-space:nowrap;flex-shrink:0}}
