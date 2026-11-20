@@ -515,3 +515,5 @@ footer a{color:#fff}
 .qr img{display:block;width:84px;height:84px}
 .qr span{font-size:13.5px;font-weight:700;color:var(--navy);max-width:110px;line-height:1.3}
 @media (max-width:980px), (hover:none){.qr{display:none}}
+.menu a.lang{display:inline-flex !important;align-items:center;justify-content:center;min-width:40px;min-height:36px;padding:0 10px;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--line);font-weight:700;font-size:13.5px;letter-spacing:.5px;color:var(--navy)}
+.menu a.lang:hover{box-shadow:inset 0 0 0 1.5px var(--navy)}
