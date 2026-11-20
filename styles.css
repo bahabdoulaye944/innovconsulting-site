@@ -479,3 +479,28 @@ footer a{color:#fff}
 @media (max-width:980px){.shots{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;padding-bottom:12px;scrollbar-width:none}.shots::-webkit-scrollbar{display:none}.shots figure{flex:0 0 62%;scroll-snap-align:center}}
 @media (max-width:760px){.shots figure{flex-basis:72%}}
 .avatar-photo{display:block;width:120px;height:120px;border-radius:28px;object-fit:cover;box-shadow:0 0 0 4px rgba(94,234,212,.35)}
+
+/* Notre cas : Nimba Eat */
+.case{background:linear-gradient(180deg,#FFF6F1 0%,#fff 100%)}
+.case .eyebrow{color:var(--orange-ink)}
+.case-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.case-text h2{font-size:clamp(30px,3.6vw,42px);margin:10px 0 14px}
+.case-lead{color:var(--muted);font-size:17.5px;max-width:620px}
+.case-list{list-style:none;margin:28px 0 30px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.case-i{background:#fff;border-radius:var(--r-md);padding:20px;box-shadow:0 0 0 1px #F6E3D8}
+.case-i h3{font-size:16.5px;margin:10px 0 6px}
+.case-i p{color:var(--muted);font-size:14.5px;margin:0}
+.case-st{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.case-st.ok{background:#DCFCE7;color:#166534}
+.case-st.wip{background:var(--orange-soft);color:var(--orange-ink)}
+.case-st.wip i{width:8px;height:8px;border-radius:50%;background:var(--orange);animation:pulse 1.4s infinite}
+.case-visual{position:relative;display:flex;justify-content:center}
+.case-shot{max-width:270px;transform:rotate(3deg)}
+.case-shot:hover{transform:rotate(0) translateY(-6px)}
+.case-badge{position:absolute;left:0;bottom:40px;background:#fff;border-radius:16px;padding:14px 16px;max-width:220px;box-shadow:0 20px 40px -20px rgba(20,33,61,.45)}
+.case-badge b{display:block;font-family:'Sora',sans-serif;font-size:15px;color:var(--navy)}
+.case-badge span{font-size:13px;color:var(--muted)}
+@media (max-width:980px){.case-grid{grid-template-columns:1fr}.case-visual{order:-1}.case-shot{max-width:220px}}
+@media (max-width:760px){.case-list{grid-template-columns:1fr}.case-badge{left:4px;bottom:20px;max-width:180px}}
+@media (prefers-reduced-motion:reduce){.case-st.wip i{animation:none}}
+@media (max-width:760px){.case-visual{display:none}}
