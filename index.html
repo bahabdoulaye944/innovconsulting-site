@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>INNOV CONSULTING GN – Automatisation, agents IA et data</title>
-<meta name="description" content="INNOV CONSULTING GN conçoit et met en place des solutions qui font gagner du temps aux entreprises : automatisation des tâches répétitives, agents IA, plateformes de données, tableaux de bord et logiciels sur mesure.">
+<meta name="description" content="INNOV CONSULTING GN conçoit et met en place des solutions qui font gagner du temps aux entreprises : automatisation, agents IA, plateformes de données, tableaux de bord et logiciels sur mesure.">
 <meta property="og:title" content="INNOV CONSULTING GN – Automatisation, agents IA et data">
 <meta property="og:description" content="Moins de tâches répétitives, plus de temps pour votre métier.">
 <meta property="og:type" content="website">
@@ -14,8 +14,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#contenu">Aller au contenu</a>
 
 <header class="site-header">
@@ -25,8 +26,8 @@
       <span class="brand-name"><b>INNOV</b><span>CONSULTING</span></span>
     </a>
     <nav class="menu" aria-label="Navigation principale">
-      <a href="#besoins">Vos défis</a>
-      <a href="#services">Services</a>
+      <a href="#defis">Vos défis</a>
+      <a href="#solutions">Solutions</a>
       <a href="#exemples">Exemples</a>
       <a href="#a-propos">À propos</a>
       <a class="menu-product" href="nimba-eat.html">Nimba Eat</a>
@@ -37,229 +38,201 @@
 
 <main id="contenu">
 
-  <section class="hero" aria-labelledby="titre">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="kicker"><i></i>Automatisation · Agents IA · Plateformes data</div>
+  <!-- HERO -->
+  <section class="h2-hero" aria-labelledby="titre">
+    <div class="glow g1" aria-hidden="true"></div>
+    <div class="glow g2" aria-hidden="true"></div>
+    <div class="wrap h2-grid">
+      <div class="h2-text">
+        <div class="kicker"><i></i>Automatisation · Agents IA · Data</div>
         <h1 id="titre">Moins de tâches répétitives, <em>plus de temps</em> pour votre métier.</h1>
-        <p class="lead">Mieux encaisser, vendre plus, arrêter les saisies à la main : nous mettons en place les outils et les agents IA qui font le travail répétitif à votre place. L'IA prépare, vous validez.</p>
+        <p class="lead">Mieux encaisser, vendre plus, arrêter les saisies à la main : nous mettons en place les outils et les agents IA qui font le travail répétitif à votre place. Vous gardez la décision.</p>
         <div class="ctas">
-          <a class="btn btn-primary" href="#contact">Parlons de votre projet</a>
-          <a class="btn btn-ghost" href="#exemples">Voir des exemples</a>
+          <a class="btn btn-primary" href="#contact">Parler de mon besoin</a>
+          <a class="btn btn-ghost" href="#defis">Voir ce que nous résolvons</a>
         </div>
-        <div class="proof">
-          <div><b>5+ ans</b><span>de projets data en France</span></div>
-          <div><b>Formateur certifié</b><span>data et IA</span></div>
-          <div><b>Clés en main</b><span>de l'idée à la mise en service</span></div>
-        </div>
+        <ul class="h2-proof">
+          <li><b>5+ ans</b> de projets data en France</li>
+          <li><b>Formateur</b> certifié</li>
+          <li><b>Clés en main</b>, de l'idée à la mise en service</li>
+        </ul>
       </div>
 
-      <div class="assistant" role="img" aria-label="Illustration : un assistant IA présente les tâches qu'il a préparées, dont une relance à valider">
-        <div class="assistant-head">
-          <div class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg></div>
-          <div><b>Votre assistant IA</b><span>Ce matin, avant votre arrivée</span></div>
+      <div class="scene" role="img" aria-label="Animation : un agent IA lit une facture et remplit automatiquement un tableau ; une ligne est signalée pour vérification">
+        <div class="doc">
+          <div class="doc-head"><span>FACTURE</span><span>N° 0247</span></div>
+          <div class="doc-row"><i>Fournisseur</i><b>Fournisseur A</b></div>
+          <div class="doc-row"><i>Date</i><b>12/11/2026</b></div>
+          <div class="doc-row"><i>Montant</i><b>4 850 000 GNF</b></div>
+          <div class="doc-row"><i>TVA</i><b>18 %</b></div>
+          <div class="doc-lines"><span></span><span></span><span></span></div>
+          <div class="scan" aria-hidden="true"></div>
         </div>
-        <div class="task">
-          <div class="task-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/></svg></div>
-          <div class="task-txt"><b>Factures du jour lues et saisies</b><span>Les cas douteux sont signalés</span></div>
-          <div class="status done">Fait</div>
+        <div class="flow" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="sheet">
+          <div class="sheet-head"><span>Fournisseur</span><span>Montant</span><span>Statut</span></div>
+          <div class="sheet-row r1"><span>Fournisseur C</span><span>1 200 000</span><span class="chip ok">Saisi</span></div>
+          <div class="sheet-row r2"><span>Fournisseur B</span><span>760 000</span><span class="chip ok">Saisi</span></div>
+          <div class="sheet-row r3 new"><span>Fournisseur A</span><span>4 850 000</span><span class="chip ok">Saisi</span></div>
+          <div class="sheet-row r4 new2"><span>Fournisseur D</span><span>980 000</span><span class="chip warn">À vérifier</span></div>
         </div>
-        <div class="task">
-          <div class="task-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/></svg></div>
-          <div class="task-txt"><b>Rapport du matin envoyé</b><span>Ventes, stocks et encaissements</span></div>
-          <div class="status done">Fait</div>
-        </div>
-        <div class="task">
-          <div class="task-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
-          <div class="task-txt"><b>Relances clients préparées</b><span>En attente de votre accord</span></div>
-          <div class="status todo">À valider</div>
-        </div>
-        <div class="assistant-foot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A9B4C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V7z"/></svg>Rien ne part sans votre validation.</div>
+        <div class="agent-pill"><i></i><span class="s1">Agent IA · lecture en cours…</span><span class="s2">Terminé · 1 facture à vérifier</span></div>
       </div>
     </div>
   </section>
 
-  <section id="besoins" aria-labelledby="t-besoins">
+  <!-- DEFIS : slider -->
+  <section id="defis" class="defis" aria-labelledby="t-defis">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head reveal">
         <div class="eyebrow">Vos défis</div>
-        <h2 id="t-besoins">Ce que vivent les entreprises en Guinée, et ce que nous mettons en place.</h2>
-        <p>Cash, impayés, ventes, saisie, coupures de courant : nous partons de vos difficultés réelles, pas de la technologie.</p>
-      </div>
-      <div class="needs">
-        <article class="need"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></div><h3>Encaisser sans rien perdre</h3><p class="quote">« Les impayés s'accumulent et le cash nous échappe. »</p><ul><li>Paiement par Orange Money, MTN et virement</li><li>Relances automatiques des retards</li><li>Caisse, banque et mobile money rapprochés chaque jour</li></ul></article>
-        <article class="need"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div><h3>Vendre plus</h3><p class="quote">« Nos ventes stagnent, on ne sait pas qui sont nos clients. »</p><ul><li>Catalogue et commandes sur WhatsApp</li><li>Fichier clients et historique d'achats</li><li>Campagnes SMS et WhatsApp ciblées</li></ul></article>
-        <article class="need"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Gagner du temps</h3><p class="quote">« Nos équipes passent leurs journées à recopier. »</p><ul><li>Factures et bons lus et saisis par un agent IA</li><li>Rapports prêts chaque matin</li><li>Réponses aux clients préparées</li></ul></article>
-        <article class="need"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></div><h3>Piloter avec des chiffres fiables</h3><p class="quote">« Chaque service a son fichier Excel, personne n'a les mêmes chiffres. »</p><ul><li>Toutes les données au même endroit</li><li>Tableau de bord sur votre téléphone</li><li>Alertes quand un chiffre dérape</li></ul></article>
-        <article class="need"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/><path d="M9 14l2 2 4-4"/></svg></div><h3>Être en règle sans y passer des heures</h3><p class="quote">« Déclarations, paie, documents : tout est à refaire chaque mois. »</p><ul><li>Paie et données prêtes pour vos déclarations sociales en ligne</li><li>Documents archivés et retrouvés en quelques secondes</li><li>Pièces prêtes pour vos comptables et auditeurs</li></ul></article>
-        <article class="need"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Continuer malgré les coupures</h3><p class="quote">« Au moindre délestage ou réseau lent, tout s'arrête. »</p><ul><li>Outils qui fonctionnent hors connexion</li><li>Synchronisation dès le retour du réseau</li><li>Sauvegardes automatiques de vos données</li></ul></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="tint" aria-labelledby="t-services">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="eyebrow">Services</div>
-        <h2 id="t-services">Pas seulement des conseils : des solutions installées et qui tournent.</h2>
-        <p>Nous concevons la solution, nous la mettons en place chez vous, et nous restons là jusqu'à ce qu'elle fonctionne au quotidien.</p>
-      </div>
-      <div class="services">
-        <article class="service">
-          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg></div>
-          <h3>Automatisation et agents IA</h3>
-          <p>Les tâches qui reviennent chaque jour se font toutes seules.</p>
-          <ul><li>Lecture et saisie de documents</li><li>Relances, e-mails et rapports préparés</li><li>Agents qui trient, résument et rédigent</li></ul>
-        </article>
-        <article class="service">
-          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
-          <h3>Plateforme de données</h3>
-          <p>Toutes vos données au même endroit, fiables et sécurisées.</p>
-          <ul><li>Centralisation dans un entrepôt de données</li><li>Connexion de vos outils et fichiers</li><li>Mise en place de votre stack data</li></ul>
-        </article>
-        <article class="service">
-          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></div>
-          <h3>Tableaux de bord</h3>
-          <p>Vos chiffres clés à jour, lisibles en un coup d'œil.</p>
-          <ul><li>Mis à jour automatiquement</li><li>Sur ordinateur et téléphone</li><li>Prévisions pour mieux décider</li></ul>
-        </article>
-        <article class="service">
-          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg></div>
-          <h3>Applications et logiciels sur mesure</h3>
-          <p>Le logiciel de gestion ou l'application qui vous manque, conçu pour le terrain : paiement mobile, SMS, réseau instable.</p>
-        </article>
-        <article class="service">
-          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l10-5 10 5-10 5z"/><path d="M6 10v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
-          <h3>Formation</h3>
-          <p>Vos équipes prennent en main l'IA et leurs outils data, avec un formateur certifié, sur place ou à distance.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="exemples" class="tint" style="padding-top:0" aria-labelledby="t-exemples">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="eyebrow">Exemples</div>
-        <h2 id="t-exemples">Ce que nous pouvons faire pour vous, parmi beaucoup d'autres choses.</h2>
-        <p>Si une tâche revient souvent ou se gère encore sur papier ou sur Excel, il y a de fortes chances qu'on puisse la simplifier.</p>
+        <h2 id="t-defis">Nous partons de ce que vous vivez, pas de la technologie.</h2>
       </div>
 
-      <h3 class="sub-title">Les tâches que nous automatisons</h3>
-      <div class="feature">
-        <div class="feature-intro">
-          <div class="tag">Cas concret</div>
-          <h3>La lecture et la saisie des factures</h3>
-          <p>Vous envoyez vos factures en PDF, en photo ou par e-mail. L'agent fait le reste.</p>
+      <div class="slider" data-slider data-autoplay="7000" aria-roledescription="carrousel" aria-label="Défis des entreprises et solutions">
+        <div class="slides">
+          <article class="slide" aria-roledescription="diapositive" aria-label="1 sur 6">
+            <div class="slide-l"><div class="slide-n">01</div><h3>Encaisser sans rien perdre</h3><p class="slide-q">« Les impayés s'accumulent et le cash nous échappe. »</p></div>
+            <ul class="slide-r"><li>Paiement par Orange Money, MTN et virement</li><li>Relances automatiques des retards</li><li>Caisse, banque et mobile money rapprochés chaque jour</li></ul>
+          </article>
+          <article class="slide" aria-roledescription="diapositive" aria-label="2 sur 6">
+            <div class="slide-l"><div class="slide-n">02</div><h3>Vendre plus</h3><p class="slide-q">« Nos ventes stagnent, on ne sait pas qui sont nos clients. »</p></div>
+            <ul class="slide-r"><li>Catalogue et commandes sur WhatsApp</li><li>Fichier clients et historique d'achats</li><li>Campagnes SMS et WhatsApp ciblées</li></ul>
+          </article>
+          <article class="slide" aria-roledescription="diapositive" aria-label="3 sur 6">
+            <div class="slide-l"><div class="slide-n">03</div><h3>Gagner du temps</h3><p class="slide-q">« Nos équipes passent leurs journées à recopier. »</p></div>
+            <ul class="slide-r"><li>Factures et bons lus et saisis par un agent IA</li><li>Rapports prêts chaque matin</li><li>Réponses aux clients préparées, à relire</li></ul>
+          </article>
+          <article class="slide" aria-roledescription="diapositive" aria-label="4 sur 6">
+            <div class="slide-l"><div class="slide-n">04</div><h3>Piloter avec des chiffres fiables</h3><p class="slide-q">« Chaque service a son fichier Excel, personne n'a les mêmes chiffres. »</p></div>
+            <ul class="slide-r"><li>Toutes vos données réunies dans un entrepôt</li><li>Tableau de bord sur votre téléphone</li><li>Alertes quand un chiffre dérape</li></ul>
+          </article>
+          <article class="slide" aria-roledescription="diapositive" aria-label="5 sur 6">
+            <div class="slide-l"><div class="slide-n">05</div><h3>Être en règle sans y passer des heures</h3><p class="slide-q">« Déclarations, paie, documents : tout est à refaire chaque mois. »</p></div>
+            <ul class="slide-r"><li>Données prêtes pour vos déclarations en ligne</li><li>Documents archivés et retrouvés en quelques secondes</li><li>Pièces prêtes pour vos comptables et auditeurs</li></ul>
+          </article>
+          <article class="slide" aria-roledescription="diapositive" aria-label="6 sur 6">
+            <div class="slide-l"><div class="slide-n">06</div><h3>Continuer malgré les coupures</h3><p class="slide-q">« Au moindre délestage ou réseau lent, tout s'arrête. »</p></div>
+            <ul class="slide-r"><li>Outils qui fonctionnent hors connexion</li><li>Synchronisation dès le retour du réseau</li><li>Sauvegardes automatiques de vos données</li></ul>
+          </article>
         </div>
-        <div class="ba">
-          <div class="before"><small>Aujourd'hui</small><p>Chaque facture est ouverte, lue, puis recopiée à la main : fournisseur, date, montant, TVA. Des heures perdues et des erreurs de frappe.</p></div>
-          <div class="after"><small>Avec un agent IA</small><p>Les factures sont lues, saisies dans votre tableau ou votre logiciel comptable et classées. Vous ne vérifiez que les montants douteux et les doublons.</p></div>
+        <div class="slider-ui">
+          <button class="sl-btn" data-prev type="button" aria-label="Défi précédent"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <div class="dots" data-dots></div>
+          <button class="sl-btn" data-next type="button" aria-label="Défi suivant"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="progress" aria-hidden="true"><span data-progress></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section id="solutions" aria-labelledby="t-solutions">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Solutions</div>
+        <h2 id="t-solutions">Pas seulement des conseils : des solutions installées et qui tournent.</h2>
+      </div>
+      <div class="tiles">
+        <div class="tile reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg></div><h3>Automatisation et agents IA</h3><p>Les tâches répétitives se font toutes seules.</p></div>
+        <div class="tile reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div><h3>Plateforme de données</h3><p>Vos données centralisées, fiables et sécurisées.</p></div>
+        <div class="tile reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></div><h3>Tableaux de bord</h3><p>Vos chiffres clés à jour, sur ordinateur et téléphone.</p></div>
+        <div class="tile reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg></div><h3>Logiciels sur mesure</h3><p>L'application qui vous manque, pensée pour le terrain.</p></div>
+        <div class="tile reveal"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l10-5 10 5-10 5z"/><path d="M6 10v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div><h3>Formation</h3><p>Vos équipes à l'aise avec l'IA et leurs outils.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXEMPLES : onglets + carrousel -->
+  <section id="exemples" class="tint" aria-labelledby="t-exemples">
+    <div class="wrap">
+      <div class="ex-head reveal">
+        <div class="sec-head" style="margin-bottom:0">
+          <div class="eyebrow">Exemples</div>
+          <h2 id="t-exemples">Quelques réalisations possibles, parmi beaucoup d'autres.</h2>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Type d'exemples">
+          <button role="tab" id="tab-a" aria-controls="pan-a" aria-selected="true" type="button">Tâches automatisées</button>
+          <button role="tab" id="tab-b" aria-controls="pan-b" aria-selected="false" tabindex="-1" type="button">Outils sur mesure</button>
         </div>
       </div>
-      <div class="tasks">
-        <div class="mini"><b>Bulletins scolaires</b><span class="from">Des semaines de calculs à la main chaque trimestre</span><span class="to"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>Moyennes, rangs et bulletins générés en quelques clics</span></div>
-        <div class="mini"><b>Archives et documents</b><span class="from">Des classeurs, des papiers perdus</span><span class="to"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>Documents numérisés, classés et retrouvés en quelques secondes</span></div>
-        <div class="mini"><b>Rapports</b><span class="from">Chiffres recopiés de plusieurs fichiers</span><span class="to"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>Rapport prêt chaque matin, au même format</span></div>
-        <div class="mini"><b>E-mails et demandes clients</b><span class="from">Une boîte pleine, des réponses en retard</span><span class="to"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>Messages triés, réponses rédigées à relire</span></div>
-        <div class="mini"><b>Bons de commande et stocks</b><span class="from">Chaque bon saisi, un inventaire jamais à jour</span><span class="to"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>Bons saisis, ruptures signalées à l'avance</span></div>
-        <div class="mini"><b>Tri des candidatures</b><span class="from">Des dizaines de CV à lire pour un poste</span><span class="to"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>CV résumés et classés selon vos critères</span></div>
+
+      <div id="pan-a" role="tabpanel" aria-labelledby="tab-a" class="panel">
+        <div class="rail" data-rail>
+          <article class="ex-card ex-feat">
+            <div class="ex-tag">Cas concret</div>
+            <h3>Lecture et saisie des factures</h3>
+            <div class="ex-ba"><div><small>Aujourd'hui</small><p>Chaque facture recopiée à la main : fournisseur, date, montant, TVA.</p></div><div class="after"><small>Avec un agent IA</small><p>Lues, saisies et classées. Vous ne vérifiez que les cas douteux.</p></div></div>
+          </article>
+          <article class="ex-card"><h3>Relances clients</h3><p class="from">Chercher qui n'a pas payé, écrire à chacun</p><p class="to">Impayés repérés, relances prêtes à envoyer</p></article>
+          <article class="ex-card"><h3>Rapprochement des paiements</h3><p class="from">Banque, mobile money et caisse comparés à la main</p><p class="to">Comparaison chaque jour, seuls les écarts signalés</p></article>
+          <article class="ex-card"><h3>Rapports</h3><p class="from">Chiffres recopiés de plusieurs fichiers</p><p class="to">Rapport prêt chaque matin, au même format</p></article>
+          <article class="ex-card"><h3>Bulletins scolaires</h3><p class="from">Des semaines de calculs chaque trimestre</p><p class="to">Moyennes et bulletins générés en quelques clics</p></article>
+          <article class="ex-card"><h3>Demandes clients</h3><p class="from">Une boîte pleine, des réponses en retard</p><p class="to">Messages triés, réponses rédigées à relire</p></article>
+          <article class="ex-card"><h3>Stocks et commandes</h3><p class="from">Chaque bon saisi, un inventaire jamais à jour</p><p class="to">Bons saisis, ruptures signalées à l'avance</p></article>
+        </div>
       </div>
 
-      <div class="sectors">
-        <h3 class="sub-title" style="grid-column:1/-1;margin:0 0 2px">Les outils que nous construisons</h3>
-        <article class="sector sector-feat">
-          <div class="sector-head"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l10-5 10 5-10 5z"/><path d="M6 10v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div><h3>Universités et écoles</h3></div>
-          <p>Un système de gestion scolaire complet, sur ordinateur et téléphone.</p>
-          <ul><li>Notes, moyennes et bulletins automatiques</li><li>Inscriptions et dossiers étudiants</li><li>Frais de scolarité par mobile money</li><li>Espace étudiants et parents</li></ul>
-        </article>
-        <article class="sector">
-          <div class="sector-head"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0V9z"/><path d="M5 13v8h14v-8"/></svg></div><h3>Commerces</h3></div>
-          <p>Caisse, ventes, stocks et crédits clients suivis en temps réel.</p>
-        </article>
-        <article class="sector">
-          <div class="sector-head"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v10"/><path d="M7 12h10"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg></div><h3>Cliniques et pharmacies</h3></div>
-          <p>Rendez-vous et rappels par SMS, facturation, stocks de médicaments.</p>
-        </article>
-        <article class="sector">
-          <div class="sector-head"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg></div><h3>ONG et projets</h3></div>
-          <p>Collecte terrain sur téléphone, indicateurs et rapports pour les bailleurs.</p>
-        </article>
-        <article class="sector">
-          <div class="sector-head"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h5"/></svg></div><h3>Entreprises</h3></div>
-          <p>Suivi clients, devis et factures, circuits de validation, archivage.</p>
-        </article>
-        <article class="sector">
-          <div class="sector-head"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3"/><circle cx="18.5" cy="17" r="3"/><path d="M8.5 17h6l3-6h-4l-2-4H9"/></svg></div><h3>Transport et livraison</h3></div>
-          <p>Commandes, attribution des courses, encaissements cash et mobile money.</p>
-          <a href="nimba-eat.html">Voir Nimba Eat, notre application →</a>
-        </article>
-        <article class="sector">
-          <div class="sector-head"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M5 20l5-9 3 5 2-3 4 7"/><circle cx="17" cy="6" r="2"/></svg></div><h3>Mines et fournisseurs</h3></div>
-          <p>Traçabilité des commandes, documents de conformité et reporting HSE pour travailler avec les grands projets.</p>
-        </article>
-        <div class="open-note"><b>Votre activité n'est pas dans la liste ?</b><span>Ce ne sont que des exemples. Racontez-nous comment vous travaillez aujourd'hui, nous imaginons l'outil avec vous.</span></div>
+      <div id="pan-b" role="tabpanel" aria-labelledby="tab-b" class="panel" hidden>
+        <div class="rail" data-rail>
+          <article class="ex-card ex-feat"><div class="ex-tag">Éducation</div><h3>Universités et écoles</h3><p>Notes, bulletins, inscriptions, frais de scolarité par mobile money et espace parents.</p></article>
+          <article class="ex-card"><h3>Commerces</h3><p>Caisse, ventes, stocks et crédits clients en temps réel.</p></article>
+          <article class="ex-card"><h3>Cliniques et pharmacies</h3><p>Rendez-vous, rappels SMS, facturation et stocks.</p></article>
+          <article class="ex-card"><h3>ONG et projets</h3><p>Collecte terrain hors connexion, indicateurs et rapports bailleurs.</p></article>
+          <article class="ex-card"><h3>Mines et fournisseurs</h3><p>Traçabilité, documents de conformité et reporting HSE.</p></article>
+          <article class="ex-card"><h3>Transport et livraison</h3><p>Commandes, attribution des courses, encaissements.</p><a href="nimba-eat.html">Voir Nimba Eat →</a></article>
+        </div>
+      </div>
+
+      <div class="rail-ui">
+        <p class="rail-note">Votre activité n'y est pas ? Ce ne sont que des exemples : racontez-nous comment vous travaillez.</p>
+        <div class="rail-btns">
+          <button class="sl-btn light" data-rail-prev type="button" aria-label="Exemples précédents"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button class="sl-btn light" data-rail-next type="button" aria-label="Exemples suivants"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="methode" aria-labelledby="t-methode">
+  <!-- METHODE + A PROPOS -->
+  <section id="a-propos" aria-labelledby="t-propos">
     <div class="wrap">
-      <div class="sec-head">
-        <div class="eyebrow">Méthode</div>
-        <h2 id="t-methode">De votre besoin à une solution en service.</h2>
+      <div class="track reveal" aria-label="Notre méthode en 4 étapes">
+        <div class="track-line" aria-hidden="true"><span></span></div>
+        <div class="track-step"><b>1</b><h3>On écoute</h3><p>Vos tâches, vos outils, ce qui vous coûte du temps.</p></div>
+        <div class="track-step"><b>2</b><h3>On montre</h3><p>Une première version utile, en quelques semaines.</p></div>
+        <div class="track-step"><b>3</b><h3>On installe</h3><p>Fiabilisée, sécurisée, intégrée à votre quotidien.</p></div>
+        <div class="track-step"><b>4</b><h3>On accompagne</h3><p>Formation, suivi et évolutions.</p></div>
       </div>
-      <div class="steps">
-        <div class="step"><div class="num">1</div><h3>On écoute</h3><p>Vous nous expliquez vos tâches, vos outils et ce qui vous fait perdre du temps.</p></div>
-        <div class="step"><div class="num">2</div><h3>On montre</h3><p>Une première version utile, testée avec vos équipes, en quelques semaines.</p></div>
-        <div class="step"><div class="num">3</div><h3>On installe</h3><p>La solution est fiabilisée, sécurisée et intégrée à votre quotidien.</p></div>
-        <div class="step"><div class="num">4</div><h3>On accompagne</h3><p>Vos équipes sont formées, et nous assurons le suivi et les évolutions.</p></div>
-      </div>
-    </div>
-  </section>
 
-  <section id="a-propos" class="tint" aria-labelledby="t-propos">
-    <div class="wrap about-grid">
-      <div class="founder">
-        <div class="avatar" aria-hidden="true">AB</div>
-        <h3>Abdoulaye Bah</h3>
-        <div class="role">Fondateur et président</div>
-        <p>Consultant data depuis plus de cinq ans, il aide de grandes organisations en France à mieux utiliser leurs données, à automatiser leurs tâches et à former leurs équipes.</p>
-      </div>
-      <div class="about-text">
-        <div class="sec-head" style="margin-bottom:22px">
+      <div class="about2">
+        <div class="founder reveal">
+          <div class="avatar" aria-hidden="true">AB</div>
+          <h3>Abdoulaye Bah</h3>
+          <div class="role">Fondateur et président</div>
+          <p>Consultant data depuis plus de cinq ans, il aide de grandes organisations en France à mieux utiliser leurs données, à automatiser et à former leurs équipes.</p>
+        </div>
+        <div class="about-text reveal">
           <div class="eyebrow">À propos</div>
           <h2 id="t-propos">Une entreprise guinéenne, des standards internationaux.</h2>
-        </div>
-        <p>INNOV CONSULTING GN est une société de conseil et de solutions digitales basée à Conakry. Elle met au service des entreprises guinéennes et ouest-africaines une expertise acquise auprès de grandes organisations européennes.</p>
-        <p>Notre conviction : la technologie n'a de valeur que si elle fonctionne dans les conditions réelles, avec les moyens de paiement, les réseaux et les habitudes de vos clients.</p>
-        <div class="facts">
-          <div class="fact"><b>Certifié</b><span>data, IA générative et cloud</span></div>
-          <div class="fact"><b>Formateur</b><span>agréé, sur place ou à distance</span></div>
-          <div class="fact"><b>Confidentialité</b><span>vos données restent les vôtres</span></div>
+          <p>INNOV CONSULTING GN est basée à Conakry. Notre conviction : la technologie n'a de valeur que si elle fonctionne dans les conditions réelles, avec vos moyens de paiement, votre réseau et vos habitudes.</p>
+          <div class="facts">
+            <div class="fact"><b>Certifié</b><span>data, IA générative et cloud</span></div>
+            <div class="fact"><b>Confidentiel</b><span>vos données restent les vôtres</span></div>
+            <a class="fact fact-nimba" href="nimba-eat.html"><b>Nimba Eat</b><span>notre propre application →</span></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding:64px 0 0" aria-label="Notre produit">
+  <!-- CONTACT -->
+  <section id="contact" aria-labelledby="t-contact" style="padding-top:0">
     <div class="wrap">
-      <div class="teaser">
-        <div class="teaser-l">
-          <div class="teaser-logo"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B1528" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v8"/><path d="M4 3v5a3 3 0 0 0 6 0V3"/><path d="M7 11v10"/><path d="M17 3c-2 2-3 4-3 7h3v11"/></svg></div>
-          <div><b>Notre produit : Nimba Eat</b><span>L'application de livraison de repas à Conakry, conçue par notre équipe.</span></div>
-        </div>
-        <a class="btn btn-orange" href="nimba-eat.html">Découvrir Nimba Eat</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" aria-labelledby="t-contact">
-    <div class="wrap">
-      <div class="contact-box">
+      <div class="contact-box reveal">
         <div>
           <h2 id="t-contact">Et si vous gagniez quelques heures par semaine ?</h2>
-          <p>Dites-nous quelle tâche vous prend le plus de temps. Nous vous disons gratuitement comment la simplifier.</p>
+          <p>Dites-nous quelle tâche vous prend le plus de temps. Le premier échange est offert.</p>
           <form class="contact-form" id="contact-form" novalidate>
             <div class="field-row">
               <div class="field"><label for="f-nom">Votre nom</label><input id="f-nom" name="nom" type="text" autocomplete="name" required></div>
@@ -278,7 +251,6 @@
           <div class="contact-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="#5EEAD4" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><div><small>WhatsApp</small><a href="https://wa.me/224612499162?text=Bonjour%2C%20je%20souhaite%20discuter%20d%27un%20projet%20avec%20INNOV%20CONSULTING%20GN." target="_blank" rel="noopener">Nous écrire sur WhatsApp</a></div></div>
           <div class="contact-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><small>E-mail</small><a href="mailto:contact@innovconsulting-gn.com">contact@innovconsulting-gn.com</a></div></div>
           <div class="contact-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><small>Siège</small><b>Yimbaya Tannerie, Matoto, Conakry</b></div></div>
-          <div class="contact-item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7"/><path d="M8 7v.01"/><path d="M12 17v-4a2 2 0 0 1 4 0v4"/><path d="M12 10v7"/></svg><div><small>LinkedIn</small><b>INNOV CONSULTING GN</b></div></div>
         </div>
       </div>
     </div>
@@ -297,28 +269,90 @@
 
 <script>
 (function () {
-  var form = document.getElementById('contact-form');
-  if (!form) return;
-  var err = document.getElementById('form-error');
-  var canal = 'whatsapp';
-  form.querySelectorAll('button[data-canal]').forEach(function (b) {
-    b.addEventListener('click', function () { canal = b.getAttribute('data-canal'); });
-  });
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var nom = form.nom.value.trim(), ent = form.entreprise.value.trim(), contact = form.contact.value.trim(), besoin = form.besoin.value.trim();
-    if (!nom || !contact || !besoin) { err.hidden = false; return; }
-    err.hidden = true;
-    var lignes = ['Bonjour INNOV CONSULTING GN,', '', 'Nom : ' + nom];
-    if (ent) lignes.push('Entreprise : ' + ent);
-    lignes.push('Contact : ' + contact, '', 'Mon besoin :', besoin);
-    var texte = lignes.join('\n');
-    if (canal === 'email') {
-      window.location.href = 'mailto:contact@innovconsulting-gn.com?subject=' + encodeURIComponent('Demande via le site – ' + nom) + '&body=' + encodeURIComponent(texte);
-    } else {
-      window.open('https://wa.me/224612499162?text=' + encodeURIComponent(texte), '_blank', 'noopener');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Apparition au défilement */
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    els.forEach(function (el) { io.observe(el); });
+  } else { els.forEach(function (el) { el.classList.add('in'); }); }
+
+  /* Slider des défis */
+  document.querySelectorAll('[data-slider]').forEach(function (sl) {
+    var slides = sl.querySelectorAll('.slide'), dotsBox = sl.querySelector('[data-dots]'), bar = sl.querySelector('[data-progress]');
+    var i = 0, delay = parseInt(sl.getAttribute('data-autoplay'), 10) || 7000, timer = null, paused = false, start = 0, raf = null;
+    var dots = [];
+    slides.forEach(function (s, k) {
+      var d = document.createElement('button'); d.type = 'button'; d.className = 'dot'; d.setAttribute('aria-label', 'Aller au défi ' + (k + 1));
+      d.addEventListener('click', function () { go(k, true); }); dotsBox.appendChild(d); dots.push(d);
+    });
+    function go(n, user) {
+      i = (n + slides.length) % slides.length;
+      slides.forEach(function (s, k) { s.classList.toggle('active', k === i); s.setAttribute('aria-hidden', k === i ? 'false' : 'true'); });
+      dots.forEach(function (d, k) { d.classList.toggle('on', k === i); d.setAttribute('aria-current', k === i ? 'true' : 'false'); });
+      start = performance.now();
+      if (user) { paused = true; setTimeout(function () { paused = false; start = performance.now(); }, delay * 2); }
     }
+    function tick(t) {
+      if (!paused && !reduce) {
+        var p = Math.min(1, (t - start) / delay);
+        if (bar) bar.style.width = (p * 100) + '%';
+        if (p >= 1) go(i + 1);
+      }
+      raf = requestAnimationFrame(tick);
+    }
+    sl.querySelector('[data-prev]').addEventListener('click', function () { go(i - 1, true); });
+    sl.querySelector('[data-next]').addEventListener('click', function () { go(i + 1, true); });
+    sl.addEventListener('mouseenter', function () { paused = true; });
+    sl.addEventListener('mouseleave', function () { paused = false; start = performance.now(); });
+    sl.addEventListener('focusin', function () { paused = true; });
+    sl.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') go(i - 1, true); if (e.key === 'ArrowRight') go(i + 1, true); });
+    var x0 = null;
+    sl.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    sl.addEventListener('touchend', function (e) { if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(i + (dx < 0 ? 1 : -1), true); x0 = null; });
+    go(0); raf = requestAnimationFrame(tick);
   });
+
+  /* Onglets des exemples */
+  var tabs = document.querySelectorAll('[role="tab"]');
+  function activeRail() { var p = document.querySelector('.panel:not([hidden]) [data-rail]'); return p; }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      tabs.forEach(function (o) { var on = o === t; o.setAttribute('aria-selected', on); o.tabIndex = on ? 0 : -1; document.getElementById(o.getAttribute('aria-controls')).hidden = !on; });
+      var r = activeRail(); if (r) r.scrollLeft = 0;
+    });
+    t.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      var list = Array.prototype.slice.call(tabs), k = list.indexOf(t), n = list[(k + (e.key === 'ArrowRight' ? 1 : -1) + list.length) % list.length];
+      n.focus(); n.click();
+    });
+  });
+  var rp = document.querySelector('[data-rail-prev]'), rn = document.querySelector('[data-rail-next]');
+  function slideRail(dir) { var r = activeRail(); if (!r) return; var c = r.querySelector('.ex-card'); var w = c ? c.getBoundingClientRect().width + 18 : 320; r.scrollBy({ left: dir * w, behavior: reduce ? 'auto' : 'smooth' }); }
+  if (rp) rp.addEventListener('click', function () { slideRail(-1); });
+  if (rn) rn.addEventListener('click', function () { slideRail(1); });
+
+  /* Formulaire de contact */
+  var form = document.getElementById('contact-form');
+  if (form) {
+    var err = document.getElementById('form-error'), canal = 'whatsapp';
+    form.querySelectorAll('button[data-canal]').forEach(function (b) { b.addEventListener('click', function () { canal = b.getAttribute('data-canal'); }); });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var nom = form.nom.value.trim(), ent = form.entreprise.value.trim(), contact = form.contact.value.trim(), besoin = form.besoin.value.trim();
+      if (!nom || !contact || !besoin) { err.hidden = false; return; }
+      err.hidden = true;
+      var l = ['Bonjour INNOV CONSULTING GN,', '', 'Nom : ' + nom];
+      if (ent) l.push('Entreprise : ' + ent);
+      l.push('Contact : ' + contact, '', 'Mon besoin :', besoin);
+      var txt = l.join('\n');
+      if (canal === 'email') { window.location.href = 'mailto:contact@innovconsulting-gn.com?subject=' + encodeURIComponent('Demande via le site – ' + nom) + '&body=' + encodeURIComponent(txt); }
+      else { window.open('https://wa.me/224612499162?text=' + encodeURIComponent(txt), '_blank', 'noopener'); }
+    });
+  }
 })();
 </script>
 </body>
